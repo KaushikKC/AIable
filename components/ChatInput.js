@@ -212,7 +212,7 @@ function ChatInput({ chatId }) {
      
       
     </div>
-    <div className="bg-gray-700/50  rounded-lg text-sm focus:outline-none">
+    <div className="bg-gray-700/50 shadow-inner shadow-yellow-500/40 rounded-lg text-sm focus:outline-none">
       <form onSubmit={generateResponse} className="p-5 space-x-5 flex">
         <input
           className="bg-transparent text-gray-400 focus:outline-none flex-1
@@ -228,12 +228,12 @@ function ChatInput({ chatId }) {
           (
             <>
             <select
-          value={selected}
+          value={size}
           onChange={(e) => setSize(e.target.value)}
-          className="px-4 py-2 rounded-lg text-black">
-          <option>small</option>
-          <option>medium</option>
-          <option>large</option>
+          className="px-4 py-2 rounded-lg bg-yellow-500 text-white font-semibold">
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
         </select>
             </>
           )
@@ -242,7 +242,7 @@ function ChatInput({ chatId }) {
 <select
           value={selected}
           onChange={(e) => setSelected(e.target.value)}
-          className="px-4 py-2 rounded-lg text-black">
+          className="px-4 py-2 bg-blue-500 rounded-lg text-white">
           <option>{options[0]}</option>
           <option>{options[1]}</option>
         </select>

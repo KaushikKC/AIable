@@ -44,7 +44,7 @@ function ChatRow({ id }: Props) {
       </p>
       <TrashIcon
         onClick={removeChat}
-        className="h-5 w-5 text-gray-700 hover:text-red-700"
+        className="h-5 w-5 text-gray-200 hover:text-red-700"
       />
     </Link>
   );

@@ -3,6 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { adminDb } from "../../firebaseAdmin";
 import admin from "firebase-admin";
 import query from "../../lib/queryApi";
+import logo from "../../public/Images/Logo1.png";
 
 type Data = {
   answer: string;
@@ -30,9 +31,9 @@ export default async function handler(
     text: response || "ChatGPT was unable to find an answer for that!",
     createdAt: admin.firestore.Timestamp.now(),
     user: {
-      _id: "Able",
-      name: "Able",
-      avatar: "https://links.papareact.com/89k",
+      _id: "AIable",
+      name: "AIable",
+      avatar: "https://res.cloudinary.com/dv0frgqvj/image/upload/v1681544110/Logo1_s6c7br.png",
     },
   };
 
